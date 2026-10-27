@@ -103,11 +103,24 @@ def events(page):
     return list(out.values())
 
 
-# Список олимпиад перечня со ссылками на olimpiada.ru
-article = get("/article/1266")
+# Статьи olimpiada.ru «Перечень олимпиад … на 2026/27 учебный год» — в них ссылки на страницы всех олимпиад.
+# Каждый год выходит новая статья, поэтому ищем её поиском по сайту, а не по номеру.
+SEASON_LABEL = f"{SEASON}/{(SEASON + 1) % 100:02d}"
+search = get("/search?q=%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B5%D0%BD%D1%8C+%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4")
+articles = {"/article/1266"}
+for path, title in re.findall(r'<a[^>]*href="(/article/\d+)"[^>]*>(.*?)</a>', search, re.S):
+    t = clean(title)
+    if "Перечн" in t and SEASON_LABEL in t:
+        articles.add(path)
+
 links = []
-for act_id, title in re.findall(r'<a[^>]*href="/activity/(\d+)"[^>]*>(.*?)</a>', article, re.S):
-    links.append({"act": int(act_id), "title": clean(title)})
+seen = set()
+for path in sorted(articles):
+    for act_id, title in re.findall(r'<a[^>]*href="/activity/(\d+)"[^>]*>(.*?)</a>', get(path), re.S):
+        if int(act_id) not in seen and clean(title):
+            seen.add(int(act_id))
+            links.append({"act": int(act_id), "title": clean(title)})
+print("articles:", sorted(articles), "olympiad links:", len(links))
 
 # Страницы олимпиад перечня, которых нет в статье, добавляем по таблице соответствия
 sys.path.insert(0, str(root))

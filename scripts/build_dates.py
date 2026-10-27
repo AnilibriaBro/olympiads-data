@@ -26,7 +26,10 @@ ACT = {
 
 SKIP = ("тренировоч", "подготовит", "результат", "апелляц", "балл", "разбор", "показ", "публикац", "итог", "награжд", "закрыт")
 _today = date.today()
-SEASON = _today.year if _today.month >= 8 else _today.year - 1
+_season_file = root / "rsosh_season.txt"
+# Учебный год берём из перечня: новый перечень выходит осенью, а до этого действует прошлый
+SEASON = int(_season_file.read_text(encoding="utf-8")[:4]) if _season_file.exists() else (
+    _today.year if _today.month >= 8 else _today.year - 1)
 SEASON_START = f"{SEASON}-08-15"
 
 
@@ -63,11 +66,19 @@ def main():
     data = root.parent / "src" / "data"
     known = json.loads((data / "names.json").read_text(encoding="utf-8"))
     perechen = json.loads((data / "perechen.json").read_text(encoding="utf-8"))
+    # Для олимпиад, которых нет в таблице ACT (появились в новом перечне), ищем страницу по названию из статьи
+    from names import norm_name
+    by_title = {str(p["act"]): norm_name(p["title"]) for p in pages.values() if p.get("title")}
     out = {}
     for o in perechen:
         num = o["num"]
         frozen = match(o["name"], known)
         act = ACT.get(int(frozen)) if frozen else None
+        if act is None:
+            found = match(o["name"], by_title)
+            act = int(found) if found else None
+            if act:
+                print("  новая олимпиада найдена на olimpiada.ru:", num, act)
         page = pages.get(act)
         if not page:
             continue
@@ -91,8 +102,13 @@ def main():
 
     found = sum(1 for v in out.values() if v["stages"])
     print("with dates:", found, "of", len(perechen))
-    # Защита: если сайт сменил вёрстку и даты почти не нашлись, старый файл не трогаем
+    # Защита: если даты почти не нашлись, старый файл не трогаем.
+    # С июня по ноябрь это нормально — организаторы ещё публикуют расписания нового сезона.
+    # В разгар сезона это значит, что сайт сменил вёрстку: сообщаем ошибкой (GitHub пришлёт письмо).
     if found < 20:
+        if 6 <= _today.month <= 11:
+            print(f"Даты нашлись только у {found} олимпиад — межсезонье, оставляем прежние")
+            return
         raise SystemExit(f"Даты нашлись только у {found} олимпиад — вёрстка olimpiada.ru могла измениться")
     (data / "dates.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 

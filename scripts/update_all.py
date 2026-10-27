@@ -21,11 +21,9 @@ for step in ["fetch_perechen.py", "build_perechen.py", "fetch_dates.py", "build_
     subprocess.run([sys.executable, "-I", str(scripts / step)], check=True)
 
 src = project / "src" / "data"
-today = datetime.now(timezone.utc)
-season_start = today.year if today.month >= 8 else today.year - 1
 data = {
     "version": 1,
-    "season": f"{season_start}/{str(season_start + 1)[-2:]}",
+    "season": (scripts / "rsosh_season.txt").read_text(encoding="utf-8").strip(),
     "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     "perechen": json.loads((src / "perechen.json").read_text(encoding="utf-8")),
     "dates": json.loads((src / "dates.json").read_text(encoding="utf-8")),

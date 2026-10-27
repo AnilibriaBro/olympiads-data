@@ -1,5 +1,5 @@
 # Каждый день скачивает свежий перечень и даты олимпиад и выкладывает data/data.json.
-# Приложение забирает этот файл при запуске (адреса — в src/data/remote.ts).
+# Приложение забирает этот файл при запуске (адреса — в src/data/remote.ts приложения).
 name: Обновление данных
 
 on:
@@ -9,10 +9,16 @@ on:
 
 permissions:
   contents: write
+  pages: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,16 +29,33 @@ jobs:
           CACHE_HOURS: '0'
         run: python -I scripts/update_all.py
       - name: Сохранить изменения
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "olympiads-bot"
           git config user.email "olympiads-bot@users.noreply.github.com"
-          git add data/data.json src/data scripts/rsosh_rows.json scripts/olimpiada_ru_events.json
+          git add data/data.json src/data scripts/rsosh_rows.json scripts/rsosh_season.txt scripts/olimpiada_ru_events.json
+          changed=false
           # Если поменялась только отметка времени, коммит не нужен
-          if git diff --cached --quiet -- src/data/perechen.json src/data/dates.json; then
-            echo "Данные не изменились"
-          else
+          if ! git diff --cached --quiet -- src/data/perechen.json src/data/dates.json; then
             git commit -m "Обновление данных $(date -u +%F)"
+            changed=true
+          fi
+          # GitHub отключает расписание, если в репозитории 60 дней нет изменений.
+          # Раз в 30 дней без новостей отмечаемся, чтобы обновление не остановилось.
+          last=$(git log -1 --format=%ct)
+          if [ "$changed" = false ] && [ "$last" -lt $(( $(date +%s) - 30*86400 )) ]; then
+            git reset -q
+            date -u +%F > data/heartbeat.txt
+            git add data/heartbeat.txt
+            git commit -m "Проверка связи $(date -u +%F)"
+            changed=true
+          fi
+          if [ "$changed" = true ]; then
             git push
-            # Зеркало jsDelivr хранит копию до 12 часов — просим его обновиться сразу
+            # Обновить копию на GitHub Pages и сбросить кэш зеркала jsDelivr (хранит до 12 часов)
+            gh api -X POST "repos/${{ github.repository }}/pages/builds" > /dev/null || true
             curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/data.json" > /dev/null || true
+          else
+            echo "Данные не изменились"
           fi

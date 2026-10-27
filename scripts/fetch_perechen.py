@@ -40,5 +40,12 @@ olympiads = sum(1 for r in rows if len(r["c"]) == 5)
 if olympiads < 30:
     raise SystemExit(f"Подозрительно мало олимпиад ({olympiads}), таблица на сайте могла измениться")
 
+# Учебный год, на который утверждён перечень («2026/27»), — самый частый такой текст на странице
+seasons = re.findall(r"(20\d\d)/(\d\d)", page)
+if not seasons:
+    raise SystemExit("На странице не найден учебный год перечня")
+season = max(set(seasons), key=seasons.count)
+(root / "rsosh_season.txt").write_text(f"{season[0]}/{season[1]}", encoding="utf-8")
+
 (root / "rsosh_rows.json").write_text(json.dumps(rows, ensure_ascii=False, indent=0), encoding="utf-8")
-print("rows:", len(rows), "olympiad rows:", olympiads)
+print("rows:", len(rows), "olympiad rows:", olympiads, "season:", "/".join(season))
