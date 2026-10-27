@@ -13,7 +13,8 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 root = Path(__file__).resolve().parent
 
-# Номер олимпиады в перечне РСОШ 2026/27 -> id страницы на olimpiada.ru
+# Номер олимпиады в перечне РСОШ 2026/27 (ключи src/data/names.json) -> id страницы на olimpiada.ru.
+# В другом году номера в перечне меняются, поэтому олимпиаду ищем по названию.
 ACT = {
     1: 177, 2: 6945, 3: 5369, 4: 5854, 5: 5825, 6: 22, 7: 182, 8: 5864, 9: 5150, 10: 5429,
     11: 125, 12: 5022, 13: 282, 14: 57, 15: 199, 16: 5237, 17: 5795, 18: 5003, 19: 5392, 20: 193,
@@ -55,9 +56,18 @@ def status_note(act):
 
 
 def main():
+    sys.path.insert(0, str(root))
+    from names import match
+
     pages = {p["act"]: p for p in json.loads((root / "olimpiada_ru_events.json").read_text(encoding="utf-8"))}
+    data = root.parent / "src" / "data"
+    known = json.loads((data / "names.json").read_text(encoding="utf-8"))
+    perechen = json.loads((data / "perechen.json").read_text(encoding="utf-8"))
     out = {}
-    for num, act in ACT.items():
+    for o in perechen:
+        num = o["num"]
+        frozen = match(o["name"], known)
+        act = ACT.get(int(frozen)) if frozen else None
         page = pages.get(act)
         if not page:
             continue
@@ -79,9 +89,12 @@ def main():
         out[num] = {"act": act, "stages": stages, "note": status_note(act)}
         print(num, act, [(s["name"][:5], s["start"], s["end"]) for s in stages], out[num]["note"][:50])
 
-    (root.parent / "src" / "data" / "dates.json").write_text(
-        json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("with dates:", sum(1 for v in out.values() if v["stages"]), "of", len(ACT))
+    found = sum(1 for v in out.values() if v["stages"])
+    print("with dates:", found, "of", len(perechen))
+    # Защита: если сайт сменил вёрстку и даты почти не нашлись, старый файл не трогаем
+    if found < 20:
+        raise SystemExit(f"Даты нашлись только у {found} олимпиад — вёрстка olimpiada.ru могла измениться")
+    (data / "dates.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 if __name__ == "__main__":

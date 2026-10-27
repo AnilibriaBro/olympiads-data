@@ -26,11 +26,13 @@ jobs:
         run: |
           git config user.name "olympiads-bot"
           git config user.email "olympiads-bot@users.noreply.github.com"
-          git add data src/data scripts/rsosh_rows.json scripts/olimpiada_ru_events.json
+          git add data/data.json src/data scripts/rsosh_rows.json scripts/olimpiada_ru_events.json
           # Если поменялась только отметка времени, коммит не нужен
           if git diff --cached --quiet -- src/data/perechen.json src/data/dates.json; then
             echo "Данные не изменились"
           else
             git commit -m "Обновление данных $(date -u +%F)"
             git push
+            # Зеркало jsDelivr хранит копию до 12 часов — просим его обновиться сразу
+            curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/data.json" > /dev/null || true
           fi
