@@ -1,0 +1,81 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Всесибирская открытая 
+ олимпиада школьников
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-11-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20270313
+SUMMARY:Всесибирская открытая олимпиада шко
+ льников: регистрация
+URL:https://sesc.nsu.ru/olymp-vsesib/
+DESCRIPTION:Сайт олимпиады: https://sesc.nsu.ru/olymp-vsesib/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Всесибирска
+ я открытая олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-11-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Всесибирская открытая олимпиада шко
+ льников: последний день регистрации
+URL:https://sesc.nsu.ru/olymp-vsesib/
+DESCRIPTION:Сайт олимпиады: https://sesc.nsu.ru/olymp-vsesib/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Всесибирская открытая олимпиада 
+ школьников
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-11-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261123
+SUMMARY:Всесибирская открытая олимпиада шко
+ льников: отборочный этап
+URL:https://sesc.nsu.ru/olymp-vsesib/
+DESCRIPTION:Сайт олимпиады: https://sesc.nsu.ru/olymp-vsesib/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Всесиби
+ рская открытая олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-11-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270315
+SUMMARY:Всесибирская открытая олимпиада шко
+ льников: заключительный этап
+URL:https://sesc.nsu.ru/olymp-vsesib/
+DESCRIPTION:Сайт олимпиады: https://sesc.nsu.ru/olymp-vsesib/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Все
+ сибирская открытая олимпиада школьнико
+ в
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

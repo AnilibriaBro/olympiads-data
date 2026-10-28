@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Международная олимпиа
+ да Иннополиса
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-16-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261119
+SUMMARY:Международная олимпиада Иннополиса:
+  регистрация
+URL:https://dovuz.innopolis.university/innopolis-open
+DESCRIPTION:Сайт олимпиады: https://dovuz.innopolis.university
+ /innopolis-open
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Международн
+ ая олимпиада Иннополиса
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-16-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Международная олимпиада Иннополиса:
+  последний день регистрации
+URL:https://dovuz.innopolis.university/innopolis-open
+DESCRIPTION:Сайт олимпиады: https://dovuz.innopolis.university
+ /innopolis-open
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Международная олимпиада Иннопол
+ иса
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-16-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20270206
+SUMMARY:Международная олимпиада Иннополиса:
+  отборочный этап
+URL:https://dovuz.innopolis.university/innopolis-open
+DESCRIPTION:Сайт олимпиады: https://dovuz.innopolis.university
+ /innopolis-open
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Междуна
+ родная олимпиада Иннополиса
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-16-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270315
+SUMMARY:Международная олимпиада Иннополиса:
+  заключительный этап
+URL:https://dovuz.innopolis.university/innopolis-open
+DESCRIPTION:Сайт олимпиады: https://dovuz.innopolis.university
+ /innopolis-open
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Меж
+ дународная олимпиада Иннополиса
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Кутафинская олимпиада 
+ школьников по праву
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-15-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20270112
+SUMMARY:Кутафинская олимпиада школьников по
+  праву: регистрация
+URL:https://msal.ru/content/abiturientam/olimpiady-i-konkursy/kutafinskaya-
+ olimpiada-shkolnikov-po-pravu/
+DESCRIPTION:Сайт олимпиады: https://msal.ru/content/abiturient
+ am/olimpiady-i-konkursy/kutafinskaya-olimpiada-shkolnikov-po-pravu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Кутафинская
+  олимпиада школьников по праву
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-15-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Кутафинская олимпиада школьников по
+  праву: последний день регистрации
+URL:https://msal.ru/content/abiturientam/olimpiady-i-konkursy/kutafinskaya-
+ olimpiada-shkolnikov-po-pravu/
+DESCRIPTION:Сайт олимпиады: https://msal.ru/content/abiturient
+ am/olimpiady-i-konkursy/kutafinskaya-olimpiada-shkolnikov-po-pravu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Кутафинская олимпиада школьнико
+ в по праву
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-15-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270118
+SUMMARY:Кутафинская олимпиада школьников по
+  праву: отборочный этап
+URL:https://msal.ru/content/abiturientam/olimpiady-i-konkursy/kutafinskaya-
+ olimpiada-shkolnikov-po-pravu/
+DESCRIPTION:Сайт олимпиады: https://msal.ru/content/abiturient
+ am/olimpiady-i-konkursy/kutafinskaya-olimpiada-shkolnikov-po-pravu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Кутафин
+ ская олимпиада школьников по праву
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-15-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270301
+SUMMARY:Кутафинская олимпиада школьников по
+  праву: заключительный этап
+URL:https://msal.ru/content/abiturientam/olimpiady-i-konkursy/kutafinskaya-
+ olimpiada-shkolnikov-po-pravu/
+DESCRIPTION:Сайт олимпиады: https://msal.ru/content/abiturient
+ am/olimpiady-i-konkursy/kutafinskaya-olimpiada-shkolnikov-po-pravu/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Кут
+ афинская олимпиада школьников по праву
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

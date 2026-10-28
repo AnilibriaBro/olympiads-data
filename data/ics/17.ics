@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Международная олимпиа
+ да по финансовой безопасности
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-17-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260904
+SUMMARY:Международная олимпиада по финансов
+ ой безопасности: отборочный этап
+URL:https://rosfinolymp.ru
+DESCRIPTION:Сайт олимпиады: https://rosfinolymp.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Междуна
+ родная олимпиада по финансовой безопасн
+ ости
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

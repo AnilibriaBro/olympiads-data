@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Архитектура и искусств
+ о
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-1-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20261207
+SUMMARY:Архитектура и искусство: регистраци
+ я
+URL:http://www.raai.sfedu.ru/
+DESCRIPTION:Сайт олимпиады: http://www.raai.sfedu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Архитектура
+  и искусство
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-1-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Архитектура и искусство: последний д
+ ень регистрации
+URL:http://www.raai.sfedu.ru/
+DESCRIPTION:Сайт олимпиады: http://www.raai.sfedu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Архитектура и искусство
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-1-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20270301
+SUMMARY:Архитектура и искусство: отборочный 
+ этап
+URL:http://www.raai.sfedu.ru/
+DESCRIPTION:Сайт олимпиады: http://www.raai.sfedu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Архитек
+ тура и искусство
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

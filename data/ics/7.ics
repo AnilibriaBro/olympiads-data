@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Миссия выполнима Твое 
+ призвание - финансист!
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-7-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20261201
+SUMMARY:Миссия выполнима Твое призвание - фи
+ нансист!: регистрация
+URL:https://www.fa.ru/for-applicants/olympiads/mission/
+DESCRIPTION:Сайт олимпиады: https://www.fa.ru/for-applicants/o
+ lympiads/mission/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Миссия выпо
+ лнима Твое призвание - финансист!
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-7-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Миссия выполнима Твое призвание - фи
+ нансист!: последний день регистрации
+URL:https://www.fa.ru/for-applicants/olympiads/mission/
+DESCRIPTION:Сайт олимпиады: https://www.fa.ru/for-applicants/o
+ lympiads/mission/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Миссия выполнима Твое призвание -
+  финансист!
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-7-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261207
+SUMMARY:Миссия выполнима Твое призвание - фи
+ нансист!: отборочный этап
+URL:https://www.fa.ru/for-applicants/olympiads/mission/
+DESCRIPTION:Сайт олимпиады: https://www.fa.ru/for-applicants/o
+ lympiads/mission/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Миссия в
+ ыполнима Твое призвание - финансист!
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

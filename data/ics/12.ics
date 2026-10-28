@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Герценовская олимпиад
+ а школьников
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-12-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20270201
+SUMMARY:Герценовская олимпиада школьников: 
+ отборочный этап
+URL:https://www.herzen.spb.ru/abiturients/olimpiady/olimp-rsosh/
+DESCRIPTION:Сайт олимпиады: https://www.herzen.spb.ru/abiturie
+ nts/olimpiady/olimp-rsosh/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Герцено
+ вская олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

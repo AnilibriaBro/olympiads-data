@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Межрегиональная олимп
+ иада школьников на базе ведомственны…
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-22-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20270210
+SUMMARY:Межрегиональная олимпиада школьник
+ ов на базе ведомственны…: отборочный эт
+ ап
+URL:https://v-olymp.ru/
+DESCRIPTION:Сайт олимпиады: https://v-olymp.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Межреги
+ ональная олимпиада школьников на базе в
+ едомственны…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-22-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20270215
+SUMMARY:Межрегиональная олимпиада школьник
+ ов на базе ведомственны…: заключительны
+ й этап
+URL:https://v-olymp.ru/
+DESCRIPTION:Сайт олимпиады: https://v-olymp.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Меж
+ региональная олимпиада школьников на ба
+ зе ведомственны…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

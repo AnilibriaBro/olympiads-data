@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Бельчонок
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-60-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20270113
+SUMMARY:Бельчонок: отборочный этап
+URL:https://dovuz.sfu-kras.ru/abiturientu-sfu/olimpiady/belchonok/
+DESCRIPTION:Сайт олимпиады: https://dovuz.sfu-kras.ru/abiturie
+ ntu-sfu/olimpiady/belchonok/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Бельчон
+ ок
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-60-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270215
+SUMMARY:Бельчонок: заключительный этап
+URL:https://dovuz.sfu-kras.ru/abiturientu-sfu/olimpiady/belchonok/
+DESCRIPTION:Сайт олимпиады: https://dovuz.sfu-kras.ru/abiturie
+ ntu-sfu/olimpiady/belchonok/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Бел
+ ьчонок
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Всероссийская олимпиа
+ да по искусственному интеллекту (с в…
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-5-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261019
+SUMMARY:Всероссийская олимпиада по искусств
+ енному интеллекту (с в…: отборочный этап
+URL:https://ai.edu.gov.ru/
+DESCRIPTION:Сайт олимпиады: https://ai.edu.gov.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Всеросс
+ ийская олимпиада по искусственному инте
+ ллекту (с в…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-5-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261122
+SUMMARY:Всероссийская олимпиада по искусств
+ енному интеллекту (с в…: заключительный 
+ этап
+URL:https://ai.edu.gov.ru/
+DESCRIPTION:Сайт олимпиады: https://ai.edu.gov.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Все
+ российская олимпиада по искусственному 
+ интеллекту (с в…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

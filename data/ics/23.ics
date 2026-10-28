@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Казанский (Приволжский
+ ) федеральный университет
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-23-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261124
+SUMMARY:Казанский (Приволжский) федеральный 
+ университет: регистрация
+URL:https://malun.kpfu.ru/mpo
+DESCRIPTION:Сайт олимпиады: https://malun.kpfu.ru/mpo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Казанский (П
+ риволжский) федеральный университет
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-23-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Казанский (Приволжский) федеральный 
+ университет: последний день регистрации
+URL:https://malun.kpfu.ru/mpo
+DESCRIPTION:Сайт олимпиады: https://malun.kpfu.ru/mpo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Казанский (Приволжский) федераль
+ ный университет
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-23-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261124
+SUMMARY:Казанский (Приволжский) федеральный 
+ университет: отборочный этап
+URL:https://malun.kpfu.ru/mpo
+DESCRIPTION:Сайт олимпиады: https://malun.kpfu.ru/mpo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Казанск
+ ий (Приволжский) федеральный университе
+ т
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-23-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270208
+SUMMARY:Казанский (Приволжский) федеральный 
+ университет: заключительный этап
+URL:https://malun.kpfu.ru/mpo
+DESCRIPTION:Сайт олимпиады: https://malun.kpfu.ru/mpo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Каз
+ анский (Приволжский) федеральный универ
+ ситет
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

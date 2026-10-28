@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Открытая региональная 
+ межвузовская олимпиада школьников (…
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-49-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20270111
+SUMMARY:Открытая региональная межвузовская 
+ олимпиада школьников (…: отборочный эта
+ п
+URL:http://abiturient.tsu.ru/ru/content/ormo
+DESCRIPTION:Сайт олимпиады: http://abiturient.tsu.ru/ru/conten
+ t/ormo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Открыта
+ я региональная межвузовская олимпиада ш
+ кольников (…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-49-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270301
+SUMMARY:Открытая региональная межвузовская 
+ олимпиада школьников (…: заключительный
+  этап
+URL:http://abiturient.tsu.ru/ru/content/ormo
+DESCRIPTION:Сайт олимпиады: http://abiturient.tsu.ru/ru/conten
+ t/ormo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Отк
+ рытая региональная межвузовская олимпи
+ ада школьников (…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

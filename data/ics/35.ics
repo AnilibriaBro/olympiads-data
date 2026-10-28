@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Ломоносов
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-35-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261205
+SUMMARY:Ломоносов: регистрация
+URL:https://olymp.msu.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.msu.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Ломоносов
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-35-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Ломоносов: последний день регистрац
+ ии
+URL:https://olymp.msu.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.msu.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Ломоносов
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-35-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261205
+SUMMARY:Ломоносов: отборочный этап
+URL:https://olymp.msu.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.msu.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Ломонос
+ ов
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Московская олимпиада ш
+ кольников
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-26-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261123
+SUMMARY:Московская олимпиада школьников: ре
+ гистрация
+URL:https://xn--l1ae4a.xn--l1afu.xn--p1ai
+DESCRIPTION:Сайт олимпиады: https://xn--l1ae4a.xn--l1afu.xn--p
+ 1ai
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Московская 
+ олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-26-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Московская олимпиада школьников: по
+ следний день регистрации
+URL:https://xn--l1ae4a.xn--l1afu.xn--p1ai
+DESCRIPTION:Сайт олимпиады: https://xn--l1ae4a.xn--l1afu.xn--p
+ 1ai
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Московская олимпиада школьников
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-26-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20270301
+SUMMARY:Московская олимпиада школьников: от
+ борочный этап
+URL:https://xn--l1ae4a.xn--l1afu.xn--p1ai
+DESCRIPTION:Сайт олимпиады: https://xn--l1ae4a.xn--l1afu.xn--p
+ 1ai
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Московс
+ кая олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-26-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270329
+SUMMARY:Московская олимпиада школьников: за
+ ключительный этап
+URL:https://xn--l1ae4a.xn--l1afu.xn--p1ai
+DESCRIPTION:Сайт олимпиады: https://xn--l1ae4a.xn--l1afu.xn--p
+ 1ai
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Мос
+ ковская олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

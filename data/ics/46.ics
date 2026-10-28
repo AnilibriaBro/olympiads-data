@@ -1,0 +1,75 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Будущее Сибири
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-46-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261202
+SUMMARY:Будущее Сибири: регистрация
+URL:https://olymp-sibir.nstu.ru/
+DESCRIPTION:Сайт олимпиады: https://olymp-sibir.nstu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Будущее Сиб
+ ири
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-46-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Будущее Сибири: последний день регис
+ трации
+URL:https://olymp-sibir.nstu.ru/
+DESCRIPTION:Сайт олимпиады: https://olymp-sibir.nstu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Будущее Сибири
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-46-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261214
+SUMMARY:Будущее Сибири: отборочный этап
+URL:https://olymp-sibir.nstu.ru/
+DESCRIPTION:Сайт олимпиады: https://olymp-sibir.nstu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Будущее 
+ Сибири
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-46-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270301
+SUMMARY:Будущее Сибири: заключительный этап
+URL:https://olymp-sibir.nstu.ru/
+DESCRIPTION:Сайт олимпиады: https://olymp-sibir.nstu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Буд
+ ущее Сибири
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

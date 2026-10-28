@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Шаг в будущее
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-39-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261109
+SUMMARY:Шаг в будущее: регистрация
+URL:https://olymp.bmstu.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.bmstu.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Шаг в будуще
+ е
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-39-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Шаг в будущее: последний день регист
+ рации
+URL:https://olymp.bmstu.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.bmstu.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Шаг в будущее
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-39-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261208
+SUMMARY:Шаг в будущее: отборочный этап
+URL:https://olymp.bmstu.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.bmstu.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Шаг в бу
+ дущее
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

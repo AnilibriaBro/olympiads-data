@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Открытая олимпиада шко
+ льников
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-47-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20270215
+SUMMARY:Открытая олимпиада школьников: отбо
+ рочный этап
+URL:https://olymp.itmo.ru/
+DESCRIPTION:Сайт олимпиады: https://olymp.itmo.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Открыта
+ я олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-47-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Открытая олимпиада школьников: закл
+ ючительный этап
+URL:https://olymp.itmo.ru/
+DESCRIPTION:Сайт олимпиады: https://olymp.itmo.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Отк
+ рытая олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

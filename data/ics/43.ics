@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Олимпиада школьников С
+ анкт-Петербургского государственног…
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-43-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261202
+SUMMARY:Олимпиада школьников Санкт-Петербур
+ гского государственног…: регистрация
+URL:http://www.olympiada.spbu.ru/
+DESCRIPTION:Сайт олимпиады: http://www.olympiada.spbu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Олимпиада ш
+ кольников Санкт-Петербургского государ
+ ственног…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-43-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Олимпиада школьников Санкт-Петербур
+ гского государственног…: последний ден
+ ь регистрации
+URL:http://www.olympiada.spbu.ru/
+DESCRIPTION:Сайт олимпиады: http://www.olympiada.spbu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Олимпиада школьников Санкт-Петер
+ бургского государственног…
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-43-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261202
+SUMMARY:Олимпиада школьников Санкт-Петербур
+ гского государственног…: отборочный эт
+ ап
+URL:http://www.olympiada.spbu.ru/
+DESCRIPTION:Сайт олимпиады: http://www.olympiada.spbu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Олимпиа
+ да школьников Санкт-Петербургского госу
+ дарственног…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

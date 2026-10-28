@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Физтех
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-38-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20261108
+SUMMARY:Физтех: регистрация
+URL:https://olymp-online.mipt.ru
+DESCRIPTION:Сайт олимпиады: https://olymp-online.mipt.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Физтех
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-38-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Физтех: последний день регистрации
+URL:https://olymp-online.mipt.ru
+DESCRIPTION:Сайт олимпиады: https://olymp-online.mipt.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Физтех
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-38-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20270126
+SUMMARY:Физтех: отборочный этап
+URL:https://olymp-online.mipt.ru
+DESCRIPTION:Сайт олимпиады: https://olymp-online.mipt.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Физтех
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-38-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270405
+SUMMARY:Физтех: заключительный этап
+URL:https://olymp-online.mipt.ru
+DESCRIPTION:Сайт олимпиады: https://olymp-online.mipt.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Физ
+ тех
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

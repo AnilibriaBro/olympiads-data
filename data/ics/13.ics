@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Инженерная олимпиада ш
+ кольников
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-13-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Инженерная олимпиада школьников: от
+ борочный этап
+URL:https://olymp.mephi.ru/engineering/about
+DESCRIPTION:Сайт олимпиады: https://olymp.mephi.ru/engineering
+ /about
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Инженер
+ ная олимпиада школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

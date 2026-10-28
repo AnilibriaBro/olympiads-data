@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Межрегиональная олимп
+ иада школьников имени И.Я. Верченко
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-21-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20270209
+SUMMARY:Межрегиональная олимпиада школьник
+ ов имени И.Я. Верченко: отборочный этап
+URL:https://v-olymp.ru/
+DESCRIPTION:Сайт олимпиады: https://v-olymp.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Межреги
+ ональная олимпиада школьников имени И.Я.
+  Верченко
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-21-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20270301
+SUMMARY:Межрегиональная олимпиада школьник
+ ов имени И.Я. Верченко: заключительный эт
+ ап
+URL:https://v-olymp.ru/
+DESCRIPTION:Сайт олимпиады: https://v-olymp.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Меж
+ региональная олимпиада школьников имен
+ и И.Я. Верченко
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

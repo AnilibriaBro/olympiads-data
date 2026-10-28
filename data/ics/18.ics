@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Евразийская лингвисти
+ ческая олимпиада
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-18-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Евразийская лингвистическая олимпи
+ ада: заключительный этап
+URL:https://elo.linguanet.ru
+DESCRIPTION:Сайт олимпиады: https://elo.linguanet.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Евр
+ азийская лингвистическая олимпиада
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

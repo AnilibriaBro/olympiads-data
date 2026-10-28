@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Национальная технолог
+ ическая олимпиада
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-3-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20261104
+SUMMARY:Национальная технологическая олимп
+ иада: регистрация
+URL:http://ntcontest.ru
+DESCRIPTION:Сайт олимпиады: http://ntcontest.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Национальна
+ я технологическая олимпиада
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-3-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Национальная технологическая олимп
+ иада: последний день регистрации
+URL:http://ntcontest.ru
+DESCRIPTION:Сайт олимпиады: http://ntcontest.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Национальная технологическая ол
+ импиада
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-3-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Национальная технологическая олимп
+ иада: отборочный этап
+URL:http://ntcontest.ru
+DESCRIPTION:Сайт олимпиады: http://ntcontest.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Национа
+ льная технологическая олимпиада
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

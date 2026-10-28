@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Интернет-олимпиада шко
+ льников по физике
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-14-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20270124
+SUMMARY:Интернет-олимпиада школьников по фи
+ зике: отборочный этап
+URL:https://distolymp2.spbu.ru/
+DESCRIPTION:Сайт олимпиады: https://distolymp2.spbu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Интерне
+ т-олимпиада школьников по физике
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-14-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Интернет-олимпиада школьников по фи
+ зике: заключительный этап
+URL:https://distolymp2.spbu.ru/
+DESCRIPTION:Сайт олимпиады: https://distolymp2.spbu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Инт
+ ернет-олимпиада школьников по физике
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
