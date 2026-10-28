@@ -22,6 +22,14 @@
      "who": "победителям и призёрам; участникам",
      "rules": "2026",
      "source": "https://urfu.ru/ru/applicant/docs-abiturient/olimp/"
+    },
+    {
+     "vuz": "unn",
+     "text": "10 баллов, за участие — 5",
+     "who": "победителям и призёрам; участникам",
+     "rules": "2026",
+     "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf",
+     "note": "За муниципальный этап ВсОШ — 2 балла победителям и призёрам"
     }
    ]
   },
@@ -489,6 +497,383 @@
      "source": "https://olympiada.rudn.ru"
     }
    ]
+  },
+  {
+   "id": 5030,
+   "name": "Всероссийский конкурс «Большая перемена»",
+   "short": "Большая перемена",
+   "org": "Движение первых",
+   "site": "https://bolshayaperemena.online",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "лауреатам I и II степени (засчитывается и 10 класс)",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    },
+    {
+     "vuz": "unn",
+     "text": "5 баллов победителю, 3 — призёру",
+     "who": "победителям (диплом I степени) и призёрам",
+     "rules": "2026",
+     "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5031,
+   "name": "Международная детско-юношеская премия «Экология — дело каждого»",
+   "short": "Экология — дело каждого",
+   "org": "Росприроднадзор",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "лауреатам, призёрам и победителям",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    },
+    {
+     "vuz": "kfu",
+     "text": "5 баллов победителю, 3 — призёру",
+     "who": "победителям и призёрам 10–11 классов",
+     "rules": "2026",
+     "source": "https://admissions.kpfu.ru/bakalavriat-specialitet/priem-po-osobym-usloviyam/uchyot-individualnyx-dostizhenij/"
+    },
+    {
+     "vuz": "unn",
+     "text": "3 балла, за участие — 1",
+     "who": "лауреатам, победителям и призёрам; участникам",
+     "rules": "2026",
+     "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5032,
+   "name": "Международный инженерный чемпионат CASE-IN, школьная лига",
+   "short": "CASE-IN (школьная лига)",
+   "org": "Фонд «Надёжная смена»",
+   "site": "https://case-in.ru",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям основного сезона и Осеннего кубка",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5033,
+   "name": "Конкурс для школьников «Школьный акселератор Сбера»",
+   "short": "Школьный акселератор Сбера",
+   "org": "Сбербанк",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "финалистам с сертификатом",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5034,
+   "name": "Всероссийский конкурс научно-технологических проектов «Технологии Первых»",
+   "short": "Технологии Первых",
+   "org": "Движение первых",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5035,
+   "name": "Всероссийский проект «МедиаПритяжение»",
+   "short": "МедиаПритяжение",
+   "org": "Движение первых",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям финального этапа",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5036,
+   "name": "Московский конкурс «Интеллектуальный мегаполис. Потенциал»",
+   "short": "Интеллектуальный мегаполис. Потенциал",
+   "org": "Московский центр качества образования",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям и призёрам в номинациях «Кадетский класс», «Медиакласс», «Предпринимательский класс»",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5037,
+   "name": "Российская компетентностная олимпиада",
+   "short": "Компетентностная олимпиада",
+   "org": "АНО «Открытое образование»",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5038,
+   "name": "Всероссийский конкурс «Моя страна — моя Россия»",
+   "short": "Моя страна — моя Россия",
+   "org": "АНО «Моя страна»",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5039,
+   "name": "Национальный открытый чемпионат творческих компетенций «ArtMasters»",
+   "short": "ArtMasters",
+   "org": "АНО «АртМастерс»",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "финалистам и победителям",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5040,
+   "name": "Всероссийский интеллектуально-творческий конкурс «Государство — это мы»",
+   "short": "Государство — это мы",
+   "org": "РАНХиГС",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5041,
+   "name": "Открытый интеллектуальный конкурс «Менеджмент будущего» Института управления РАНХиГС",
+   "short": "Менеджмент будущего",
+   "org": "РАНХиГС",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "победителям и призёрам",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5042,
+   "name": "Олимпиада школьников РАНХиГС: баллы за участие",
+   "short": "Олимпиада РАНХиГС (баллы за участие)",
+   "org": "РАНХиГС",
+   "site": "https://www.ranepa.ru/olymp/",
+   "perechen": 42,
+   "benefits": [
+    {
+     "vuz": "ranepa",
+     "text": "7 баллов",
+     "who": "участникам финала 10–11 классов, набравшим не меньше 35% от максимума",
+     "rules": "2026",
+     "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf",
+     "note": "По профилю «Филология» участникам — 5 баллов"
+    }
+   ]
+  },
+  {
+   "id": 5043,
+   "name": "Олимпиады и интеллектуальные состязания Финансового университета",
+   "short": "Олимпиады Финуниверситета",
+   "org": "Финансовый университет",
+   "site": "https://www.fa.ru",
+   "benefits": [
+    {
+     "vuz": "fa",
+     "text": "до 5 баллов",
+     "who": "победитель — 5, призёр — 3, участник финала — 2, участник отбора — 1",
+     "rules": "2026",
+     "source": "https://www.fa.ru/for-applicants/bachelor/achievements/",
+     "note": "Засчитываются результаты не старше года. В том числе «Миссия выполнима»"
+    }
+   ]
+  },
+  {
+   "id": 5044,
+   "name": "Межрегиональные предметные олимпиады КФУ: доп. баллы",
+   "short": "Олимпиады КФУ (доп. баллы)",
+   "org": "КФУ",
+   "site": "https://malun.kpfu.ru/mpo",
+   "perechen": 23,
+   "benefits": [
+    {
+     "vuz": "kfu",
+     "text": "10 баллов победителю, 8 — призёру",
+     "who": "победителям и призёрам 10–11 классов",
+     "rules": "2026",
+     "source": "https://admissions.kpfu.ru/bakalavriat-specialitet/priem-po-osobym-usloviyam/uchyot-individualnyx-dostizhenij/"
+    }
+   ]
+  },
+  {
+   "id": 5045,
+   "name": "Конкурс исследовательских работ «Лобачевский. Прорыв»",
+   "short": "Лобачевский. Прорыв",
+   "org": "КФУ",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "kfu",
+     "text": "10 баллов победителю, 8 — призёру",
+     "who": "победителям и призёрам 10–11 классов",
+     "rules": "2026",
+     "source": "https://admissions.kpfu.ru/bakalavriat-specialitet/priem-po-osobym-usloviyam/uchyot-individualnyx-dostizhenij/"
+    }
+   ]
+  },
+  {
+   "id": 5046,
+   "name": "Всероссийский кейс-чемпионат «КЛЮЧ», региональный этап",
+   "short": "Кейс-чемпионат «КЛЮЧ»",
+   "org": "КФУ",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "kfu",
+     "text": "10 баллов победителю, 8 — призёру",
+     "who": "победителям и призёрам 10–11 классов",
+     "rules": "2026",
+     "source": "https://admissions.kpfu.ru/bakalavriat-specialitet/priem-po-osobym-usloviyam/uchyot-individualnyx-dostizhenij/"
+    }
+   ]
+  },
+  {
+   "id": 5047,
+   "name": "НТО, профиль «Конструктивная безопасность»",
+   "short": "НТО: Конструктивная безопасность",
+   "org": "Кружковое движение НТИ",
+   "site": "https://ntcontest.ru",
+   "benefits": [
+    {
+     "vuz": "kfu",
+     "text": "10 баллов победителю, 8 — призёру",
+     "who": "победителям и призёрам 10–11 классов",
+     "rules": "2026",
+     "source": "https://admissions.kpfu.ru/bakalavriat-specialitet/priem-po-osobym-usloviyam/uchyot-individualnyx-dostizhenij/"
+    }
+   ]
+  },
+  {
+   "id": 5048,
+   "name": "Городская конференция научного общества учащихся «Эврика»",
+   "short": "Конференция «Эврика»",
+   "org": "Нижний Новгород",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "unn",
+     "text": "до 5 баллов",
+     "who": "победитель — 5, призёр — 3, участник — 1",
+     "rules": "2026",
+     "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5049,
+   "name": "Конкурсы исследовательских работ старшеклассников ННГУ",
+   "short": "Конкурсы исследовательских работ ННГУ",
+   "org": "ННГУ",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "unn",
+     "text": "до 6 баллов",
+     "who": "диплом I степени — 6, II и III — 4, участник — 2",
+     "rules": "2026",
+     "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5050,
+   "name": "Творческие конкурсы, интеллектуальные игры и олимпиады на базе ННГУ",
+   "short": "Творческие конкурсы ННГУ",
+   "org": "ННГУ",
+   "site": "",
+   "benefits": [
+    {
+     "vuz": "unn",
+     "text": "до 4 баллов",
+     "who": "победитель — 4, призёр — 2, участник — 1",
+     "rules": "2026",
+     "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
+    }
+   ]
+  },
+  {
+   "id": 5051,
+   "name": "Олимпиада «МИСИС зажигает звёзды»",
+   "short": "МИСИС зажигает звёзды",
+   "org": "МИСИС",
+   "site": "https://misis.ru",
+   "benefits": [
+    {
+     "vuz": "misis",
+     "text": "5 баллов победителю, 3 — призёру",
+     "who": "победителям и призёрам 10–11 классов",
+     "rules": "2026",
+     "source": "https://misis.ru/news/10191/"
+    }
+   ]
   }
  ],
  "participation": [
@@ -514,6 +899,27 @@
    "perechen": "all",
    "rules": "2026",
    "source": "https://admission.rudn.ru/guide/"
+  },
+  {
+   "vuz": "unn",
+   "text": "10 баллов за диплом перечневой олимпиады, если он не использован для БВИ или 100 баллов, и 3 балла за участие",
+   "perechen": "all",
+   "rules": "2026",
+   "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
+  },
+  {
+   "vuz": "fa",
+   "text": "5 баллов победителю и 3 призёру перечневой олимпиады 2025/26, если диплом не использован для БВИ или 100 баллов",
+   "perechen": "all",
+   "rules": "2026",
+   "source": "https://www.fa.ru/for-applicants/bachelor/achievements/"
+  },
+  {
+   "vuz": "ranepa",
+   "text": "7 баллов за диплом перечневой олимпиады 11 класса, если он не использован для БВИ или 100 баллов",
+   "perechen": "all",
+   "rules": "2026",
+   "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
   }
  ]
 }
