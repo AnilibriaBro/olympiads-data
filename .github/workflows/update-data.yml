@@ -37,7 +37,7 @@ jobs:
           git add data src/data scripts/rsosh_rows.json scripts/rsosh_season.txt scripts/olimpiada_ru_events.json
           changed=false
           # Если поменялась только отметка времени, коммит не нужен
-          if ! git diff --cached --quiet -- src/data/perechen.json src/data/dates.json data/ics; then
+          if ! git diff --cached --quiet -- src/data/perechen.json src/data/dates.json src/data/extra.json data/ics; then
             git commit -m "Обновление данных $(date -u +%F)"
             changed=true
           fi

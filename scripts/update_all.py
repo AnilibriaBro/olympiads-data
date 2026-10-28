@@ -21,12 +21,17 @@ for step in ["fetch_perechen.py", "build_perechen.py", "fetch_dates.py", "build_
     subprocess.run([sys.executable, "-I", str(scripts / step)], check=True)
 
 src = project / "src" / "data"
+# Список олимпиад вне перечня ведётся вручную (scripts/extra_olympiads.json); комментарий в приложение не нужен
+extra = json.loads((scripts / "extra_olympiads.json").read_text(encoding="utf-8"))
+extra.pop("_comment", None)
+(src / "extra.json").write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
 data = {
     "version": 1,
     "season": (scripts / "rsosh_season.txt").read_text(encoding="utf-8").strip(),
     "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     "perechen": json.loads((src / "perechen.json").read_text(encoding="utf-8")),
     "dates": json.loads((src / "dates.json").read_text(encoding="utf-8")),
+    "extra": extra,
 }
 out = project / "data"
 out.mkdir(exist_ok=True)
