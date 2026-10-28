@@ -16,7 +16,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 scripts = Path(__file__).resolve().parent
 project = scripts.parent
 
-for step in ["fetch_perechen.py", "build_perechen.py", "fetch_dates.py", "build_dates.py", "build_ics.py"]:
+for step in ["fetch_perechen.py", "build_perechen.py", "fetch_dates.py", "build_dates.py", "build_ics.py",
+             "build_minpros.py"]:
     print("==>", step, flush=True)
     subprocess.run([sys.executable, "-I", str(scripts / step)], check=True)
 
@@ -32,6 +33,7 @@ data = {
     "perechen": json.loads((src / "perechen.json").read_text(encoding="utf-8")),
     "dates": json.loads((src / "dates.json").read_text(encoding="utf-8")),
     "extra": extra,
+    "minpros": json.loads((src / "minpros.json").read_text(encoding="utf-8")),
 }
 out = project / "data"
 out.mkdir(exist_ok=True)
