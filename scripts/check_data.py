@@ -47,6 +47,27 @@ for v in mp["vuzes"]:
         err(f"вуз записан дважды: {v['name']} ({names[k]} и {v['id']})")
     names[k] = v["id"]
 
+# Справочник вузов из мониторинга: без повторов с теми, что уже есть, у филиала есть головной вуз
+vdir = load("vuzdir.json")
+if len(vdir["items"]) < 300:
+    err(f"справочник вузов: всего {len(vdir['items'])} — мало")
+for v in vdir["items"]:
+    if v["id"] in vuz_ids:
+        err(f"справочник вузов: повтор id {v['id']} ({v['name'][:60]})")
+    if not v.get("city"):
+        err(f"справочник вузов: без города {v['name'][:60]}")
+    k = (norm_name(v["name"]), v["city"])
+    if k in names:
+        err(f"справочник вузов: записан дважды {v['name'][:60]}")
+    names[k] = v["id"]
+    vuz_ids.add(v["id"])
+for v in vdir["items"] + vdir["known"]:
+    if v.get("parent") and v["parent"] not in vuz_ids:
+        err(f"справочник вузов: неизвестный головной вуз {v['parent']} у {v['id']}")
+for k in vdir["known"]:
+    if k["id"] not in vuz_ids:
+        err(f"справочник вузов: неизвестный вуз {k['id']}")
+
 # Перечень РСОШ
 nums = [o["num"] for o in per]
 if len(nums) != len(set(nums)):
@@ -131,7 +152,7 @@ for m in mp["items"]:
 
 unique = sum(1 for m in mp["items"] if not m.get("same"))
 print(f"перечень РСОШ: {len(per)}, баллы в вузах: {len(extra['items'])}, "
-      f"перечень Минпроса: {unique} (всего {len(mp['items'])}), вузов: {len(vuz_ids)}")
+      f"перечень Минпроса: {unique} (всего {len(mp['items'])}), вузов и филиалов: {len(vuz_ids)}")
 if errors:
     print(f"НАЙДЕНО ОШИБОК: {len(errors)}")
     for e in errors:

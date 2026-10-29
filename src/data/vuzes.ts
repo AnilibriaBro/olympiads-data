@@ -1,4 +1,8 @@
-export type Vuz = { id: string; short: string; name: string; city: string; site: string };
+export type Vuz = {
+  id: string; short: string; name: string; city: string; site: string;
+  region?: string; // область или край — из мониторинга Минобрнауки
+  parent?: string; // у филиала — id головного вуза
+};
 
 export const VUZES: Vuz[] = [
   { id: 'msu', short: 'МГУ', name: 'Московский государственный университет им. М. В. Ломоносова', city: 'Москва', site: 'https://msu.ru' },

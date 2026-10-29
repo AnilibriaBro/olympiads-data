@@ -17,7 +17,7 @@ scripts = Path(__file__).resolve().parent
 project = scripts.parent
 
 for step in ["fetch_perechen.py", "build_perechen.py", "fetch_dates.py", "build_dates.py", "build_ics.py",
-             "build_minpros.py"]:
+             "build_minpros.py", "fetch_vuzes.py", "build_vuzdir.py"]:
     print("==>", step, flush=True)
     subprocess.run([sys.executable, "-I", str(scripts / step)], check=True)
 
@@ -37,6 +37,7 @@ data = {
     "dates": json.loads((src / "dates.json").read_text(encoding="utf-8")),
     "extra": extra,
     "minpros": json.loads((src / "minpros.json").read_text(encoding="utf-8")),
+    "vuzdir": json.loads((src / "vuzdir.json").read_text(encoding="utf-8")),
 }
 out = project / "data"
 out.mkdir(exist_ok=True)

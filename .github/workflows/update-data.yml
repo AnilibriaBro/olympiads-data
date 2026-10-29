@@ -1,4 +1,5 @@
 # Каждый день скачивает свежий перечень и даты олимпиад и выкладывает data/data.json.
+# Список вузов из мониторинга Минобрнауки — раз в 30 дней (он обновляется раз в год).
 # Приложение забирает этот файл при запуске (адреса — в src/data/remote.ts приложения).
 name: Обновление данных
 
@@ -34,10 +35,10 @@ jobs:
         run: |
           git config user.name "olympiads-bot"
           git config user.email "olympiads-bot@users.noreply.github.com"
-          git add data src/data scripts/rsosh_rows.json scripts/rsosh_season.txt scripts/olimpiada_ru_events.json
+          git add data src/data scripts/rsosh_rows.json scripts/rsosh_season.txt scripts/olimpiada_ru_events.json scripts/vuzes_rows.json
           changed=false
           # Если поменялась только отметка времени, коммит не нужен
-          if ! git diff --cached --quiet -- src/data/perechen.json src/data/dates.json src/data/extra.json src/data/minpros.json data/ics; then
+          if ! git diff --cached --quiet -- src/data/perechen.json src/data/dates.json src/data/extra.json src/data/minpros.json src/data/vuzdir.json data/ics; then
             git commit -m "Обновление данных $(date -u +%F)"
             changed=true
           fi
