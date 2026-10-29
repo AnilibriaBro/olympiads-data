@@ -1,0 +1,86 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Всероссийская академи
+ ческая олимпиада школьников имени В.…
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-2-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20270209
+SUMMARY:Всероссийская академическая олимпи
+ ада школьников имени В.…: регистрация
+URL:https://vernadsky.online
+DESCRIPTION:Сайт олимпиады: https://vernadsky.online
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Всероссийск
+ ая академическая олимпиада школьников и
+ мени В.…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-2-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Всероссийская академическая олимпи
+ ада школьников имени В.…: последний день
+  регистрации
+URL:https://vernadsky.online
+DESCRIPTION:Сайт олимпиады: https://vernadsky.online
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Всероссийская академическая оли
+ мпиада школьников имени В.…
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-2-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270301
+SUMMARY:Всероссийская академическая олимпи
+ ада школьников имени В.…: отборочный эта
+ п
+URL:https://vernadsky.online
+DESCRIPTION:Сайт олимпиады: https://vernadsky.online
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Всеросс
+ ийская академическая олимпиада школьни
+ ков имени В.…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-2-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270404
+SUMMARY:Всероссийская академическая олимпи
+ ада школьников имени В.…: заключительны
+ й этап
+URL:https://vernadsky.online
+DESCRIPTION:Сайт олимпиады: https://vernadsky.online
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Все
+ российская академическая олимпиада шко
+ льников имени В.…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
