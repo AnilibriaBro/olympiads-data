@@ -26,6 +26,9 @@ src = project / "src" / "data"
 extra = json.loads((scripts / "extra_olympiads.json").read_text(encoding="utf-8"))
 extra.pop("_comment", None)
 (src / "extra.json").write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
+# Дубли, битые ссылки, пустые поля — при ошибке данные не публикуются, в приложении остаются вчерашние
+print("==> check_data.py", flush=True)
+subprocess.run([sys.executable, "-I", str(scripts / "check_data.py")], check=True)
 data = {
     "version": 1,
     "season": (scripts / "rsosh_season.txt").read_text(encoding="utf-8").strip(),

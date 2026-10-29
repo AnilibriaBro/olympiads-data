@@ -118,6 +118,25 @@ def main():
         raise SystemExit(f"Совпали номера у разных мероприятий: {dup[:4]}")
     if len(items) < 300:
         raise SystemExit(f"Подозрительно мало мероприятий ({len(items)}) — таблица могла измениться")
+    # Та же олимпиада уже есть в приложении: в перечне РСОШ (даёт БВИ) или в «Баллах в вузах».
+    # Такие записи помечаем полем same — в списке перечня Минпроса они не показываются второй раз.
+    from names import match
+    data_dir = scripts.parent / "src" / "data"
+    known = json.loads((data_dir / "names.json").read_text(encoding="utf-8"))
+    rsosh = {norm_name(o["name"]): o for o in json.loads((data_dir / "perechen.json").read_text(encoding="utf-8"))}
+    extra = json.loads((scripts / "extra_olympiads.json").read_text(encoding="utf-8"))["items"]
+    by_name = {e["minpros"]: e["id"] for e in extra if e.get("minpros")}
+    for i in items:
+        o = rsosh.get(norm_name(i["name"]))
+        if o:
+            frozen = match(o["name"], known)
+            i["same"] = {"rsosh": int(frozen) if frozen else 1000 + o["num"]}
+        elif i["name"] in by_name:
+            i["same"] = {"extra": by_name[i["name"]]}
+    missing = set(by_name) - {i["name"] for i in items}
+    if missing:
+        raise SystemExit(f"В extra_olympiads.json указаны названия, которых нет в перечне: {sorted(missing)[:3]}")
+
     # Вузы, которых нет в src/data/vuzes.ts: название и город — для раздела «Вузы»
     vuzes = {}
     for i in items:
@@ -131,7 +150,8 @@ def main():
     print("мероприятий:", len(items), "из них проводят вузы:", sum(i["vuz"] for i in items),
           "вузов-организаторов:", len({i["vuzId"] for i in items if i["vuzId"]}), "новых вузов:", len(vuzes),
           "без города:", sum(1 for v in vuzes.values() if not v["city"]),
-          "международных:", sum(i["intl"] for i in items), "творческих:", sum(i["kind"] == "art" for i in items))
+          "международных:", sum(i["intl"] for i in items), "творческих:", sum(i["kind"] == "art" for i in items),
+          "уже есть в приложении:", sum(1 for i in items if i.get("same")))
 
 
 if __name__ == "__main__":

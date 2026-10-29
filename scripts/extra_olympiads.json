@@ -1,5 +1,5 @@
 {
- "_comment": "Олимпиады и конкурсы вне перечня РСОШ, за которые вузы дают доп. баллы (индивидуальные достижения), и доп. баллы за участие в перечневых олимпиадах. Собрано вручную по официальным страницам приёмных комиссий. rules — год правил приёма, по которым указаны баллы. perechen — постоянный номер перечневой олимпиады (как в src/data/names.json), если запись про неё. Новые вузы добавлять сюда же; id — от 5001 и дальше, не менять.",
+ "_comment": "Олимпиады и конкурсы вне перечня РСОШ, за которые вузы дают доп. баллы (индивидуальные достижения), и доп. баллы за участие в перечневых олимпиадах. Собрано вручную по официальным страницам приёмных комиссий. rules — год правил приёма, по которым указаны баллы. perechen — постоянный номер перечневой олимпиады (как в src/data/names.json), если запись про неё. Новые вузы добавлять сюда же; id — от 5001 и дальше, не менять. minpros — точное название той же олимпиады в перечне Минпросвещения: там она не показывается повторно.",
  "checked": "2026-10-28",
  "items": [
   {
@@ -65,7 +65,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Олимпиада школьников по истории инженерного дела"
   },
   {
    "id": 5004,
@@ -81,7 +82,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Олимпиада школьников по истории Санкт-Петербурга"
   },
   {
    "id": 5005,
@@ -97,7 +99,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Олимпиада школьников по технопредпринимательству “ТехноОлимп”"
   },
   {
    "id": 5006,
@@ -113,7 +116,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Олимпиада школьников по физике “Естествознание”"
   },
   {
    "id": 5007,
@@ -129,7 +133,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Олимпиада школьников по востоковедению “Восточный вектор”"
   },
   {
    "id": 5008,
@@ -145,7 +150,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Международный конкурс “Литературные судьбы Беларуси и России: от диалога к пониманию”"
   },
   {
    "id": 5009,
@@ -161,7 +167,8 @@
      "rules": "2026",
      "source": "https://abiturient.spbu.ru/medialibrary/ru/2026/bac/2026_individual_dostizheniya.pdf"
     }
-   ]
+   ],
+   "minpros": "Международный конкурс исследовательских работ в области мировой политики и международных отношений “Республика Узбекистан и Российская Федерация в контексте трансформации системы международных отношений”"
   },
   {
    "id": 5010,
@@ -464,7 +471,8 @@
      "rules": "2026",
      "source": "https://www.mirea.ru/news/opublikovany-rezultaty-zaklyuchitelnogo-etapa-mnogoprofilnoy-olimpiady-rtu-mirea-2025-2026-uchebnogo/"
     }
-   ]
+   ],
+   "minpros": "Многопрофильная олимпиада РТУ МИРЭА"
   },
   {
    "id": 5028,
@@ -520,7 +528,8 @@
      "rules": "2026",
      "source": "http://www.unn.ru/site/images/docs/priem/2026/Pril_4_Pravila_priema_2026_1.pdf"
     }
-   ]
+   ],
+   "minpros": "Всероссийский конкурс “Большая перемена” в 2026 году"
   },
   {
    "id": 5031,
@@ -566,7 +575,8 @@
      "rules": "2026",
      "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
     }
-   ]
+   ],
+   "minpros": "Международный инженерный чемпионат CASE-IN. Школьная лига. Основной сезон и Осенний кубок"
   },
   {
    "id": 5033,
@@ -582,7 +592,8 @@
      "rules": "2026",
      "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
     }
-   ]
+   ],
+   "minpros": "Конкурс для школьников “Школьный акселератор Сбера”"
   },
   {
    "id": 5034,
@@ -630,7 +641,8 @@
      "rules": "2026",
      "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
     }
-   ]
+   ],
+   "minpros": "Московский конкурс межпредметных навыков и знаний “Интеллектуальный мегаполис. Потенциал (предпрофессиональный экзамен)”"
   },
   {
    "id": 5037,
@@ -646,7 +658,8 @@
      "rules": "2026",
      "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
     }
-   ]
+   ],
+   "minpros": "XVI Российская компетентностная олимпиада"
   },
   {
    "id": 5038,
@@ -662,7 +675,8 @@
      "rules": "2026",
      "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
     }
-   ]
+   ],
+   "minpros": "Всероссийский конкурс молодежных авторских проектов и проектов в сфере образования, направленных на социально-экономическое развитие российских территорий, “Моя страна - моя Россия”"
   },
   {
    "id": 5039,
@@ -694,7 +708,8 @@
      "rules": "2026",
      "source": "https://www.ranepa.ru/upload/doc/pk/2026/id_bac_spec_2026.pdf"
     }
-   ]
+   ],
+   "minpros": "Всероссийский открытый интеллектуально-творческий конкурс “Государство - это мы”"
   },
   {
    "id": 5041,
@@ -794,7 +809,8 @@
      "rules": "2026",
      "source": "https://admissions.kpfu.ru/bakalavriat-specialitet/priem-po-osobym-usloviyam/uchyot-individualnyx-dostizhenij/"
     }
-   ]
+   ],
+   "minpros": "Всероссийский кейс-чемпионат “КЛЮЧ”"
   },
   {
    "id": 5047,
@@ -874,7 +890,8 @@
      "rules": "2026",
      "source": "https://misis.ru/news/10191/"
     }
-   ]
+   ],
+   "minpros": "Олимпиада “МИСИС зажигает звёзды”"
   }
  ],
  "participation": [
