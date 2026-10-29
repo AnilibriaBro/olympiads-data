@@ -1,7 +1,7 @@
 """Перечень олимпиад и конкурсов Минпросвещения (приказ № 598 от 28.08.2026, на 2026/27 год)
 -> src/data/minpros.json. Из этого перечня вузы выбирают, за что давать доп. баллы при поступлении.
 
-Берём только направление «Наука и образование» (без спорта и искусства) и без ВсОШ — она в приложении отдельно.
+Берём направления «Наука и образование» и «Искусство и культура» (без спорта) и без ВсОШ — она в приложении отдельно.
 Usage:
   python scripts/build_minpros.py <страница приказа на garant.ru, сохранённая как .html>   — разобрать заново
   python scripts/build_minpros.py                                                      — из scripts/minpros_rows.json
@@ -18,6 +18,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 scripts = Path(__file__).resolve().parent
 sys.path.insert(0, str(scripts))
 from names import norm_name  # noqa: E402
+from minpros_vuzes import vuz_of  # noqa: E402
 
 ORDER = "№ 598 от 28.08.2026"
 SOURCE = "https://www.garant.ru/products/ipo/prime/doc/414884344/"
@@ -63,6 +64,9 @@ def build(rows):
         if it["n"].startswith("1."):
             continue  # ВсОШ
         sci = [p for p in it["parts"] if p[0].startswith("Наука")]
+        art = [p for p in it["parts"] if p[0].startswith("Искусство")]
+        kind = "science" if sci else "art"
+        sci = sci or art  # спорт и «иное» не берём
         if not sci:
             continue
         levels = [p[2].rstrip(".") for p in sci]
@@ -74,6 +78,7 @@ def build(rows):
                 x = x.strip()
                 if x and x not in profiles:
                     profiles.append(x)
+        vz = vuz_of(it["org"]) if VUZ.search(it["org"]) else None
         out.append({
             # Постоянный номер по названию: чтобы отметки в «Моих олимпиадах» не съехали, когда номер в перечне поменяется
             "id": 1_000_000 + zlib.crc32((norm_name(it["name"]) + "|" + norm_name(it["org"])).encode("utf-8")) % 900_000_000,
@@ -82,8 +87,11 @@ def build(rows):
             "org": short_org(it["org"]),
             "profile": "; ".join(profiles),
             "level": best,
-            "vuz": bool(VUZ.search(it["org"])),
+            "vuz": vz is not None,
+            "vuzId": vz[0] if vz else "",
+            "_vuz": vz,
             "intl": it["n"].startswith("3."),
+            "kind": kind,
         })
     return out
 
@@ -110,11 +118,20 @@ def main():
         raise SystemExit(f"Совпали номера у разных мероприятий: {dup[:4]}")
     if len(items) < 300:
         raise SystemExit(f"Подозрительно мало мероприятий ({len(items)}) — таблица могла измениться")
-    data = {"order": ORDER, "source": SOURCE, "items": items}
+    # Вузы, которых нет в src/data/vuzes.ts: название и город — для раздела «Вузы»
+    vuzes = {}
+    for i in items:
+        vz = i.pop("_vuz")
+        if vz and vz[2] is not None:
+            vuzes.setdefault(vz[0], {"id": vz[0], "name": vz[1], "city": vz[2]})
+    data = {"order": ORDER, "source": SOURCE, "items": items,
+            "vuzes": sorted(vuzes.values(), key=lambda v: v["name"])}
     (scripts.parent / "src" / "data" / "minpros.json").write_text(
         json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print("мероприятий:", len(items), "из них проводят вузы:", sum(i["vuz"] for i in items),
-          "международных:", sum(i["intl"] for i in items))
+          "вузов-организаторов:", len({i["vuzId"] for i in items if i["vuzId"]}), "новых вузов:", len(vuzes),
+          "без города:", sum(1 for v in vuzes.values() if not v["city"]),
+          "международных:", sum(i["intl"] for i in items), "творческих:", sum(i["kind"] == "art" for i in items))
 
 
 if __name__ == "__main__":
