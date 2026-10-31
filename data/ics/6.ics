@@ -44,7 +44,7 @@ BEGIN:VEVENT
 UID:olymp-6-1@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261123
 SUMMARY:Высшая проба: отборочный этап
 URL:http://olymp.hse.ru/mmo
 DESCRIPTION:Сайт олимпиады: http://olymp.hse.ru/mmo
