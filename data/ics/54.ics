@@ -1,0 +1,86 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Olympiads app//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Олимпиада: Региональный конкурс ш
+ кольников Челябинского университетс…
+X-WR-TIMEZONE:Europe/Moscow
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:olymp-54-0@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20270126
+SUMMARY:Региональный конкурс школьников Чел
+ ябинского университетс…: регистрация
+URL:https://www.csu.ru/
+DESCRIPTION:Сайт олимпиады: https://www.csu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Региональны
+ й конкурс школьников Челябинского униве
+ рситетс…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-54-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:Региональный конкурс школьников Чел
+ ябинского университетс…: последний ден
+ ь регистрации
+URL:https://www.csu.ru/
+DESCRIPTION:Сайт олимпиады: https://www.csu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Региональный конкурс школьников 
+ Челябинского университетс…
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-54-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20270126
+SUMMARY:Региональный конкурс школьников Чел
+ ябинского университетс…: отборочный эт
+ ап
+URL:https://www.csu.ru/
+DESCRIPTION:Сайт олимпиады: https://www.csu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Региона
+ льный конкурс школьников Челябинского у
+ ниверситетс…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-54-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270315
+SUMMARY:Региональный конкурс школьников Чел
+ ябинского университетс…: заключительны
+ й этап
+URL:https://www.csu.ru/
+DESCRIPTION:Сайт олимпиады: https://www.csu.ru/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Рег
+ иональный конкурс школьников Челябинск
+ ого университетс…
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

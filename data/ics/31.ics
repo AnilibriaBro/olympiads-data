@@ -11,8 +11,8 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:olymp-31-0@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
-DTSTART;VALUE=DATE:20270313
-DTEND;VALUE=DATE:20270314
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
 SUMMARY:Олимпиада МГИМО МИД России для школь
  ников: отборочный этап
 URL:https://olymp.mgimo.ru
@@ -22,6 +22,23 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Завтра: отборочный этап — Олимпиа
  да МГИМО МИД России для школьников
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-31-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Олимпиада МГИМО МИД России для школь
+ ников: заключительный этап
+URL:https://olymp.mgimo.ru
+DESCRIPTION:Сайт олимпиады: https://olymp.mgimo.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Оли
+ мпиада МГИМО МИД России для школьников
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
