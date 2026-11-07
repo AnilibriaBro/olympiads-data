@@ -11,10 +11,11 @@ BEGIN:VEVENT
 UID:olymp-24-0@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270203
 SUMMARY:Юные таланты: отборочный этап
-URL:http://olymp.psu.ru/
-DESCRIPTION:Сайт олимпиады: http://olymp.psu.ru/
+URL:https://psu.ru/for-applicants/olymp/
+DESCRIPTION:Сайт олимпиады: https://psu.ru/for-applicants/olym
+ p/
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -27,10 +28,11 @@ BEGIN:VEVENT
 UID:olymp-24-1@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20270303
-DTEND;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270321
 SUMMARY:Юные таланты: заключительный этап
-URL:http://olymp.psu.ru/
-DESCRIPTION:Сайт олимпиады: http://olymp.psu.ru/
+URL:https://psu.ru/for-applicants/olymp/
+DESCRIPTION:Сайт олимпиады: https://psu.ru/for-applicants/olym
+ p/
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
