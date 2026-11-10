@@ -67,7 +67,7 @@ BEGIN:VEVENT
 UID:olymp-16-2@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20270219
-DTEND;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270325
 SUMMARY:Международная олимпиада Иннополиса:
   заключительный этап
 URL:https://dovuz.innopolis.university/innopolis-open

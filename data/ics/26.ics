@@ -12,7 +12,7 @@ BEGIN:VEVENT
 UID:olymp-26-0@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261218
 SUMMARY:Московская олимпиада школьников: ре
  гистрация
 URL:https://xn--l1ae4a.xn--l1afu.xn--p1ai
@@ -29,8 +29,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:olymp-26-0-close@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
 SUMMARY:Московская олимпиада школьников: по
  следний день регистрации
 URL:https://xn--l1ae4a.xn--l1afu.xn--p1ai
