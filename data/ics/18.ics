@@ -11,6 +11,58 @@ X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:olymp-18-0@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20261231
+SUMMARY:Евразийская лингвистическая олимпи
+ ада: регистрация
+URL:https://elo.linguanet.ru
+DESCRIPTION:Сайт олимпиады: https://elo.linguanet.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: регистрация — Евразийская
+  лингвистическая олимпиада
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-18-0-close@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Евразийская лингвистическая олимпи
+ ада: последний день регистрации
+URL:https://elo.linguanet.ru
+DESCRIPTION:Сайт олимпиады: https://elo.linguanet.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через два дня закрывается регистр
+ ация — Евразийская лингвистическая оли
+ мпиада
+TRIGGER:-P1DT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-18-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Евразийская лингвистическая олимпи
+ ада: отборочный этап
+URL:https://elo.linguanet.ru
+DESCRIPTION:Сайт олимпиады: https://elo.linguanet.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: отборочный этап — Евразий
+ ская лингвистическая олимпиада
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:olymp-18-2@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 SUMMARY:Евразийская лингвистическая олимпи

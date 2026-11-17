@@ -44,7 +44,7 @@ BEGIN:VEVENT
 UID:olymp-39-1@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261214
 SUMMARY:Шаг в будущее: отборочный этап
 URL:https://olymp.bmstu.ru
 DESCRIPTION:Сайт олимпиады: https://olymp.bmstu.ru
