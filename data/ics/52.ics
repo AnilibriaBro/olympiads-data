@@ -22,4 +22,20 @@ DESCRIPTION:Завтра: отборочный этап — Росатом
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:olymp-52-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261130
+SUMMARY:Росатом: заключительный этап
+URL:https://olymp.mephi.ru/rosatom_it/
+DESCRIPTION:Сайт олимпиады: https://olymp.mephi.ru/rosatom_it/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Рос
+ атом
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
 END:VCALENDAR

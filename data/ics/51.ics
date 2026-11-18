@@ -22,4 +22,20 @@ DESCRIPTION:Завтра: отборочный этап — Газпром
 TRIGGER:-PT14H
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:olymp-51-1@anilibriabro.github.io
+DTSTAMP:20260801T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270301
+SUMMARY:Газпром: заключительный этап
+URL:https://olympiad.gazprom.ru
+DESCRIPTION:Сайт олимпиады: https://olympiad.gazprom.ru
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Завтра: заключительный этап — Газ
+ пром
+TRIGGER:-PT14H
+END:VALARM
+END:VEVENT
 END:VCALENDAR
