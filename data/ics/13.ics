@@ -12,7 +12,7 @@ BEGIN:VEVENT
 UID:olymp-13-0@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20261011
-DTEND;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261130
 SUMMARY:Инженерная олимпиада школьников: от
  борочный этап
 URL:https://olymp.mephi.ru/engineering/about
