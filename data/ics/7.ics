@@ -12,7 +12,7 @@ BEGIN:VEVENT
 UID:olymp-7-0@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
 DTSTART;VALUE=DATE:20260914
-DTEND;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261208
 SUMMARY:Миссия выполнима Твое призвание - фи
  нансист!: регистрация
 URL:https://www.fa.ru/for-applicants/olympiads/mission/
@@ -29,8 +29,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:olymp-7-0-close@anilibriabro.github.io
 DTSTAMP:20260801T000000Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
 SUMMARY:Миссия выполнима Твое призвание - фи
  нансист!: последний день регистрации
 URL:https://www.fa.ru/for-applicants/olympiads/mission/
